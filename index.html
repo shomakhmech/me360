@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <h1>Inal Shomakhov Engineering Portfolio</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inal Shomakhov Engineering Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Welcome to My Portfolio ME360</h1>
-    <p>Click a project below to learn more:</p>
-    <ul>
-        <li><a href="projects/4bar.html">4-Bar Linkage Motion Analysis</a></li>
-        <li><a href="projects/container.html">Automated Trash Container Design</a></li>
-    </ul>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="container mx-auto p-6">
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-blue-600">Inal Shomakhov Engineering Portfolio</h1>
+            <p class="mt-2 text-lg">Welcome to my engineering portfolio! Click a project below to learn more:</p>
+        </header>
+
+        <ul class="space-y-4">
+            <li>
+                <a href="projects/4bar.html" class="block bg-white p-4 rounded-lg shadow hover:bg-blue-100 transition">
+                    <h2 class="text-2xl font-semibold">4-Bar Linkage Motion Analysis</h2>
+                    <p class="text-gray-600">Analysis of motion, torque, and reaction forces in a four-bar mechanism.</p>
+                </a>
+            </li>
+            <li>
+                <a href="projects/container.html" class="block bg-white p-4 rounded-lg shadow hover:bg-blue-100 transition">
+                    <h2 class="text-2xl font-semibold">Automated Trash Container Design</h2>
+                    <p class="text-gray-600">Development of an automated system for waste collection and disposal.</p>
+                </a>
+            </li>
+        </ul>
+
+        <footer class="mt-8 text-center text-gray-500">
+            © 2025 Inal Shomakhov. All rights reserved.
+        </footer>
+    </div>
 </body>
 </html>
