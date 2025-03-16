@@ -1,25 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4-Bar Linkage Motion Analysis</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>4-Bar Linkage Motion Analysis</h1>
-    <p><strong>Description:</strong> Write about your project here.</p>
-    <p><strong>Results:</strong></p>
-    <p>Max Motor Torque: 654 N-mm (when extension is almost vertical)</p>
-    <p>Max Reaction Force on Bearing: 14 N</p>
-    <p>Max Reaction Force on New Bearing: 21 N</p>
-    <p>Max Motor Power: 2233 W</p>
-    <p><strong>Images:</strong></p>
-    <img src="img1.png" alt="Project Image" width="600px">
-    <img src="img2.png" alt="Project Image" width="600px">
-    <img src="img3.png" alt="Project Image" width="600px">
-    <img src="img4.png" alt="Project Image" width="600px">
-    <br><br>
-    <a href="../index.html">Back to Portfolio</a>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="container mx-auto p-6">
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-blue-600">4-Bar Linkage Motion Analysis</h1>
+            <p class="mt-2 text-lg">An analysis of the mechanical motion and torque in a four-bar linkage system, including simulation results and key performance indicators.</p>
+        </header>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Project Overview</h2>
+            <p class="mt-2 text-gray-700">
+                This project involved the simulation and analysis of a four-bar linkage mechanism to evaluate the motion, torque, and reaction forces involved in the system. 
+                The objective was to optimize motor torque and bearing forces for efficient motion. The analysis provided insights into the system's mechanical behavior under 
+                different loading conditions.
+            </p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Results</h2>
+            <ul class="list-disc ml-6 mt-2 text-gray-700">
+                <li>Max Motor Torque: <strong>654 N-mm</strong> (at near-vertical extension).</li>
+                <li>Max Reaction Force on Bearing: <strong>14 N</strong>.</li>
+                <li>Max Reaction Force on New Bearing: <strong>21 N</strong>.</li>
+                <li>Max Motor Power: <strong>2233 W</strong>.</li>
+            </ul>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Technical Details</h2>
+            <p class="mt-2 text-gray-700">
+                The linkage system was modeled and simulated in SolidWorks to calculate the torque, angular displacement, and reaction forces at various joints. 
+                The simulation included dynamic loading conditions to evaluate performance under realistic operating scenarios.
+            </p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Images</h2>
+            <div class="grid grid-cols-2 gap-4 mt-4">
+                <img src="../img1.png" alt="Linkage Motion 1" class="rounded-lg shadow-md">
+                <img src="../img2.png" alt="Linkage Motion 2" class="rounded-lg shadow-md">
+                <img src="../img3.png" alt="Linkage Motion 3" class="rounded-lg shadow-md">
+                <img src="../img4.png" alt="Linkage Motion 4" class="rounded-lg shadow-md">
+            </div>
+        </section>
+
+        <footer class="mt-8 text-center text-gray-500">
+            <a href="../index.html" class="text-blue-500 hover:underline">Back to Portfolio</a>
+        </footer>
+    </div>
 </body>
 </html>
