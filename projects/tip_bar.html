@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Speed Control</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="container mx-auto p-6">
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-blue-600">Motor Speed Control</h1>
+            <p class="mt-2 text-lg">Design and implementation of a motor speed control system for transporting a dynamically unstable load.</p>
+        </header>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Introduction</h2>
+            <p class="mt-2 text-gray-700">
+                The goal of this project was to design a system that transports a vertically standing 1-foot long aluminum bar across a variable distance (5–10 ft) without toppling.
+                The challenge was to minimize transport time while ensuring the bar remained stable at the end of motion.
+            </p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Theory</h2>
+            <p class="mt-2 text-gray-700">
+                The system's stability is governed by the moment equation:
+            </p>
+            <div class="bg-gray-200 p-4 rounded-lg mt-4">
+                <p class="font-mono text-lg">a = (g * w) / h</p>
+            </div>
+            <p class="mt-2 text-gray-700">
+                Where:
+            </p>
+            <ul class="list-disc ml-6 text-gray-700">
+                <li><strong>a</strong> = Maximum allowed acceleration</li>
+                <li><strong>g</strong> = Gravitational acceleration</li>
+                <li><strong>w</strong> = Width of the base</li>
+                <li><strong>h</strong> = Height of the bar</li>
+            </ul>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Simulation</h2>
+            <p class="mt-2 text-gray-700">
+                A dynamic simulation was performed using SolidWorks to validate the calculated maximum acceleration and to determine the optimal motion profile for stable transport.
+                Simulation results confirmed that the derived stability condition matched the system's physical behavior.
+            </p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Prototype Construction</h2>
+            <p class="mt-2 text-gray-700">
+                The physical prototype was built using the following components:
+            </p>
+            <ul class="list-disc ml-6 text-gray-700">
+                <li>12V gear motor</li>
+                <li>Arduino Uno board with power amplifier</li>
+                <li>Aluminum extrusion bar</li>
+                <li>Foam board base</li>
+                <li>Custom 3D printed wheels and mounts</li>
+            </ul>
+            <div class="grid grid-cols-2 gap-4 mt-4">
+                <img src="../IMG_0543.jpeg" alt="Prototype Top View" class="rounded-lg shadow-md">
+                <img src="../IMG_5065.png" alt="Prototype in Motion" class="rounded-lg shadow-md">
+                <img src="../IMG_5064.png" alt="Side View" class="rounded-lg shadow-md">
+                <img src="../IMG_9633.jpeg" alt="Arduino and Motor" class="rounded-lg shadow-md">
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Code Development</h2>
+            <p class="mt-2 text-gray-700">
+                The control code was developed using Arduino IDE. The system is programmed to adapt to different travel distances between 5 and 10 feet.
+                The control loop adjusts motor speed based on position feedback to ensure stable motion and minimize transport time.
+            </p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Testing</h2>
+            <p class="mt-2 text-gray-700">
+                The prototype was tested over various travel distances. Adjustments were made to motor speed and control loop parameters based on real-time performance.
+                The final system demonstrated stable transport of the bar without toppling and consistent stopping behavior.
+            </p>
+        </section>
+
+        <footer class="mt-8 text-center text-gray-500">
+            <a href="../index.html" class="text-blue-500 hover:underline">Back to Portfolio</a>
+        </footer>
+    </div>
+</body>
+</html>
