@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandboardghini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="container mx-auto p-6">
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-blue-600">Sandboardghini</h1>
+            <p class="mt-2 text-lg">A 2.5-DOF sand drawing robot that transforms digital patterns into physical art using a magnetic end effector and precision motion system.</p>
+        </header>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">General Description</h2>
+            <p class="mt-2 text-gray-700">
+                Sandboardghini is a box filled with sand, designed to create precise sand drawings using a steel ball resting on the surface. 
+                Underneath the box, a rail-mounted end effector moves in two dimensions (X and Y) powered by stepper motors.
+                A servo-driven mechanism raises or lowers a magnet below the box, which engages or disengages the steel ball above.
+                When the magnet is raised, the magnetic force is strong enough to “capture” the ball, allowing the end effector to drag it through the sand to draw shapes.
+            </p>
+            <img src=\"image1.png\" alt=\"Sandboardghini Overview\" class=\"rounded-lg shadow-md mt-4\">
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Motion System</h2>
+            <p class="mt-2 text-gray-700">
+                The system uses high-precision stepper motors on both X and Y axes.
+                The Y-axis carriage, which moves along the upper rail, is itself moved by two synchronized X-axis rails.
+                For vertical motion, a high-torque F90R servo controls the magnet lift mechanism, providing the crucial “on/off” control of the magnetic field without disturbing the overall motion.
+            </p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">End Effector Design</h2>
+            <p class="mt-2 text-gray-700">
+                The end effector was custom-designed to house the magnet and lift mechanism.
+                It features a servo-actuated linkage that pushes the magnet holder up and down a vertical guide channel.
+                The main body was 3D printed to achieve a complex geometry, while the 2D linkage components were laser cut for precision and light weight.
+            </p>
+            <img src=\"image2.png\" alt=\"End Effector Design\" class=\"rounded-lg shadow-md mt-4\">
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Manufacturing and Assembly</h2>
+            <p class=\"mt-2 text-gray-700\">
+                The system integrates several fabrication methods: 3D printing was used for mounts, carriages, and motor brackets; laser cutting was used for flat linkage parts;
+                and standard aluminum 80/20 extrusion served as the structural frame, with minor drilling performed for assembly.
+                This hybrid approach balanced strength, precision, and ease of assembly.
+            </p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Code and Control</h2>
+            <p class="mt-2 text-gray-700">
+                The control system is powered by a Maker Base board, which synchronizes the stepper motors and servo.
+                The software interprets uploaded SVG or STL files and generates G-code, much like a 3D printer slicer.
+                This allows the system to replicate virtually any shape or pattern with fine detail, all through an intuitive upload and execution process.
+            </p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold">Results</h2>
+            <p class="mt-2 text-gray-700">
+                Sandboardghini successfully draws arbitrary shapes in sand with remarkable precision.
+                The system can recreate complex designs by simply uploading an SVG or STL file, which is then processed and sliced to generate the required motion paths.
+                It combines engineering precision with artistic expression, transforming digital input into tactile output.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mt-4">
+                <img src=\"image3.png\" alt=\"Drawing Result 1\" class=\"rounded-lg shadow-md\">
+                <img src=\"image4.png\" alt=\"Drawing Result 2\" class=\"rounded-lg shadow-md\">
+            </div>
+        </section>
+
+        <footer class="mt-8 text-center text-gray-500">
+            <a href=\"../index.html\" class=\"text-blue-500 hover:underline\">Back to Portfolio</a>
+        </footer>
+    </div>
+</body>
+</html>
